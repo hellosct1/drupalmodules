@@ -12,6 +12,18 @@ Script pour détecter les modules présents `actifs` et `non  actifs`
 
 Placer le script à la racine du site web Drupal 7
 
+
+## Utilisation
+
+### dans un terminal
+
+```
+php ModuleScan.php > resultat.html
+```
+
+
+### Navigateur
+
 Taper l'URL dans un navigateur
 
 ```
