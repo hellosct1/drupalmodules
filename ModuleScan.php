@@ -4,10 +4,14 @@
 date_default_timezone_set('Europe/Paris');
 header( 'content-type: text/html; charset=utf-8' );
 
-$database = 'database';
-$hote = 'localhost';
-$db_user = 'user';
-$db_mdp = 'password';
+require 'sites/default/settings.php';
+
+
+$database = $databases['default']['default']['database'];
+$hote = $databases['default']['default']['host'];
+$db_user = $databases['default']['default']['username'];
+$db_mdp = $databases['default']['default']['password'];
+
 
 $titre = 'Liste des Modules Drupal du site -->'.$database;
 
